@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
+
+
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family:"Playwrite CZ", cursive;
+
+    background-image: url(../storage/img/old-wood-wall-texture-background-free-photo.jpg);
+}
+.caja_texto{
+    /* background-color: red; */
+    background-image: url(../storage/img/textura-de-papel-viejo_1048-3717.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 4vh;
+    padding: 30px;
+
+    width: 80vw;
+    height: 85vh;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+
+    box-shadow: 5px 5px 60px black;
+    text-align: center;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+}
+
