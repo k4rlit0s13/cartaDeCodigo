@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Bangers&display=swap');
+@media (min-width: 200px) {
+
+*{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background-color: rgb(251, 253, 105);
+}
+
+.title{
+    /* background-color: chocolate; */
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    animation: slideIn 1.5s ease-out forwards, colorTransition 5s linear infinite;
+    
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100vh); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /
+    }
+}
+@keyframes colorTransition {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+    gap: 2vh;
+    padding: 5vw;
+    opacity: 0;
+    border-radius: 3vw;
+    box-shadow: 0px 5px 10px rgb(160, 151, 26);
+    background-color: rgb(255, 241, 50);
+    animation: fadeIn 2s ease-out 1s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.letter_pagraph{
+    width: 80%;
+    font-size: 1rem;
+    font-family: "Anek Devanagari", sans-serif;
+    font-style: normal;
+}
+
+#confetti{
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: -1;
+}
+
+.back{
+    text-decoration: none;
+
+    padding: 2vw;
+    border-radius: 2vw;
+    color: black;
+    box-shadow: 3px 3px ;
+    box-shadow: 0px 5px 10px rgb(160, 151, 26);
+    transition: all 0.2s ease; /* Transición suave para el cambio de estado */
+    font-family: "Anek Devanagari", sans-serif;
+    font-style: normal;
+}
+
+
+.back:active {
+    background-color: rgb(156, 148, 29); /* Color más oscuro cuando se hace clic */
+    box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5); /* Sin sombra para simular que el botón está presionado */
+    transform: translateY(4px); /* Mueve el botón hacia abajo más para simular que está presionado */
+}
+}
