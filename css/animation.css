@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2vh;
-    background-color: rgb(251, 253, 105);
+    background-color: rgb(17, 77, 189);
 }
 
 .title{
@@ -59,10 +59,10 @@ body {
     padding: 5vw;
     opacity: 0;
     border-radius: 3vw;
-    box-shadow: 0px 5px 10px rgb(160, 151, 26);
-    background-color: rgb(255, 241, 50);
+    box-shadow: 0px 5px 10px rgb(26, 151, 160);
+    background-color: rgb(149, 243, 255);
     animation: fadeIn 2s ease-out 1s forwards;
-}
+}   
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -95,7 +95,7 @@ body {
     border-radius: 2vw;
     color: black;
     box-shadow: 3px 3px ;
-    box-shadow: 0px 5px 10px rgb(160, 151, 26);
+    box-shadow: 0px 5px 10px rgb(26, 160, 160);
     transition: all 0.2s ease; /* Transición suave para el cambio de estado */
     font-family: "Anek Devanagari", sans-serif;
     font-style: normal;
@@ -103,7 +103,7 @@ body {
 
 
 .back:active {
-    background-color: rgb(156, 148, 29); /* Color más oscuro cuando se hace clic */
+    background-color: rgb(29, 148, 156); /* Color más oscuro cuando se hace clic */
     box-shadow: 0 0px 0 rgba(0, 0, 0, 0.5); /* Sin sombra para simular que el botón está presionado */
     transform: translateY(4px); /* Mueve el botón hacia abajo más para simular que está presionado */
 }
